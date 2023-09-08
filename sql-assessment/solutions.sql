@@ -32,8 +32,8 @@ group by b.name order by total_revenue_over_total_cost_of_campaign desc;
 /* Since Campaign4 generated the highest ratio of revenue relative to total cost, I believe this is the most efficient campaign */
 
 /* Question 6:*/
-/* NOTE: My SQL operator converted the date column in the csv to varchar, and some of the floats to ints, so I had to cast them, which is shown below. 
-If I was using a different manager, the cast portions could be removed. */
+/* NOTE: My SQL operator converted the date column in the csv to varchar, and some of the floats to ints, so I had to cast them back to the right type, 
+which is shown below. If I was using a different manager, the cast portions could be removed. */
 
 with ungrouped as (SELECT
 case datepart(dw,cast(a.date as datetime))
