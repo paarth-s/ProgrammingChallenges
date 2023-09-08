@@ -1,4 +1,4 @@
-﻿/* NOTE: All SQL I have written here is in the MS SQL dialect. I am also proficient in MySQL, PostgreSQL, and all other dialects*/
+﻿/* NOTE: All SQL I have written here is in the MS SQL dialect. I am also proficient in SQLite, MySQL, PostgreSQL, and all other dialects*/
 
 /* Question 1:*/
 
@@ -9,7 +9,7 @@ SELECT date, sum(impressions) as impressions_by_date FROM marketing_performance 
 SELECT TOP 3 state, sum(revenue) as revenue_by_state from website_revenue group by state ORDER by revenue_by_state desc;
 
 /* The state that had the third-highest revenue was Ohio, which generated $37577. */
-/* The equivalent query in MySQL for the above question is: SELECT state, sum(revenue) as revenue_by_state from website_revenue group by state ORDER by revenue_by_state desc limit 3;*/
+/* The equivalent query in SQLite for the above question is: SELECT state, sum(revenue) as revenue_by_state from website_revenue group by state ORDER by revenue_by_state desc limit 3;*/
 
 /* Question 3:*/
 
